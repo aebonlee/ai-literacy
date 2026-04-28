@@ -28,7 +28,7 @@
     --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.06);
     --nav-height: 80px;
     --section-padding: 80px;
-    --container-max: 1280px;
+    --container-max: 1400px;
 
     /* Gradient */
     --primary-gradient: linear-gradient(135deg, #0046C8 0%, #4A8FE7 100%);

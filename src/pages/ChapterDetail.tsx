@@ -168,7 +168,7 @@ const ChapterDetail = (): ReactElement => {
       <section className="section">
         <div
           className="container"
-          style={{ maxWidth: '1140px', margin: '0 auto' }}
+          style={{ maxWidth: '1340px', margin: '0 auto' }}
         >
           {/* Breadcrumb */}
           <nav
