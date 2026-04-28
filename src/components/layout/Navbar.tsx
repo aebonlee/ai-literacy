@@ -66,6 +66,10 @@ const Navbar = (): ReactElement => {
   const isActive = (item: ResolvedMenuItem): boolean => {
     const checkPath = item.activePath || item.path;
     if (checkPath === '/') return location.pathname === '/';
+    // Check if current path matches any dropdown child
+    if (item.dropdown) {
+      return item.dropdown.some((sub) => location.pathname === sub.path);
+    }
     return location.pathname.startsWith(checkPath);
   };
 

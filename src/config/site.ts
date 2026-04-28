@@ -75,14 +75,43 @@ const site: SiteConfig = {
       activePath: '/curriculum',
     },
     {
-      labelKey: 'site.nav.chapters',
-      path: '/chapters',
-      activePath: '/chapters',
+      labelKey: 'site.nav.part1',
+      path: '/chapters/part1',
+      activePath: '/chapters/part1',
       dropdown: [
-        { path: '/chapters/part1', labelKey: 'site.nav.part1' },
-        { path: '/chapters/part2', labelKey: 'site.nav.part2' },
-        { path: '/chapters/part3', labelKey: 'site.nav.part3' },
-        { path: '/chapters/part4', labelKey: 'site.nav.part4' },
+        { path: '/chapters/1', labelKey: 'site.nav.ch1' },
+        { path: '/chapters/2', labelKey: 'site.nav.ch2' },
+        { path: '/chapters/3', labelKey: 'site.nav.ch3' },
+      ]
+    },
+    {
+      labelKey: 'site.nav.part2',
+      path: '/chapters/part2',
+      activePath: '/chapters/part2',
+      dropdown: [
+        { path: '/chapters/4', labelKey: 'site.nav.ch4' },
+        { path: '/chapters/5', labelKey: 'site.nav.ch5' },
+        { path: '/chapters/6', labelKey: 'site.nav.ch6' },
+      ]
+    },
+    {
+      labelKey: 'site.nav.part3',
+      path: '/chapters/part3',
+      activePath: '/chapters/part3',
+      dropdown: [
+        { path: '/chapters/7', labelKey: 'site.nav.ch7' },
+        { path: '/chapters/8', labelKey: 'site.nav.ch8' },
+        { path: '/chapters/9', labelKey: 'site.nav.ch9' },
+      ]
+    },
+    {
+      labelKey: 'site.nav.part4',
+      path: '/chapters/part4',
+      activePath: '/chapters/part4',
+      dropdown: [
+        { path: '/chapters/10', labelKey: 'site.nav.ch10' },
+        { path: '/chapters/11', labelKey: 'site.nav.ch11' },
+        { path: '/chapters/12', labelKey: 'site.nav.ch12' },
       ]
     },
     {
@@ -105,7 +134,6 @@ const site: SiteConfig = {
         { path: '/community/qna', labelKey: 'site.nav.qna' },
       ]
     },
-    { path: '/mypage', labelKey: 'site.nav.myLearning', activePath: '/mypage' },
   ],
 
   // 푸터 바로가기 링크
