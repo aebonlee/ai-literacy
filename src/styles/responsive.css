@@ -435,7 +435,7 @@
 
     /* Pages */
     .page-header {
-        padding: calc(var(--nav-height) + 40px) 0 40px;
+        padding: 40px 0 40px;
     }
 
     .page-title {
@@ -869,7 +869,7 @@
     }
 
     .page-header {
-        padding: calc(var(--nav-height) + 28px) 0 28px;
+        padding: 28px 0 28px;
     }
 
     .page-title {
