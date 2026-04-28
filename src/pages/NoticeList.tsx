@@ -59,7 +59,7 @@ const NoticeList = (): ReactElement => {
             <span>{language === 'ko' ? '공지사항' : 'Notices'}</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-bullhorn"></i>
+            📢
           </div>
           <h2 className="page-title">
             {language === 'ko' ? '공지사항' : 'Notices'}
@@ -113,10 +113,7 @@ const NoticeList = (): ReactElement => {
             </div>
           ) : (
             <div className="empty-state">
-              <i
-                className="fa-solid fa-inbox"
-                style={{ fontSize: '2rem', marginBottom: '1rem', opacity: 0.3 }}
-              ></i>
+              <span style={{ fontSize: '2rem', marginBottom: '1rem', opacity: 0.3 }}>📭</span>
               <p>
                 {language === 'ko'
                   ? '등록된 공지사항이 없습니다.'

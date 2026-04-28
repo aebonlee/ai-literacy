@@ -258,49 +258,6 @@ const ChapterDetail = (): ReactElement => {
             </div>
           </div>
 
-          {/* Section navigation tabs at top */}
-          {sections.length > 1 && (
-            <div
-              style={{
-                display: 'flex',
-                gap: '0.5rem',
-                marginBottom: '1.5rem',
-                overflowX: 'auto',
-                paddingBottom: '0.25rem',
-              }}
-            >
-              {sections.map((section, index) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(index)}
-                  style={{
-                    padding: '0.4rem 1rem',
-                    borderRadius: '999px',
-                    border:
-                      activeSection === index
-                        ? `1.5px solid ${chapterColor}`
-                        : '1.5px solid var(--border-color, #e5e7eb)',
-                    background:
-                      activeSection === index
-                        ? `${chapterColor}12`
-                        : 'transparent',
-                    color:
-                      activeSection === index
-                        ? chapterColor
-                        : 'var(--text-secondary)',
-                    fontWeight: activeSection === index ? 600 : 400,
-                    fontSize: '0.8rem',
-                    cursor: 'pointer',
-                    whiteSpace: 'nowrap',
-                    transition: 'all 0.2s',
-                  }}
-                >
-                  {index + 1}. {section.title}
-                </button>
-              ))}
-            </div>
-          )}
-
           {/* 2-Column Layout: Sidebar + Content */}
           <div className="chapter-layout">
             {/* Left Sidebar TOC */}
@@ -308,10 +265,7 @@ const ChapterDetail = (): ReactElement => {
               <aside className="chapter-sidebar">
                 <nav className="chapter-toc">
                   <h3 className="chapter-toc-title">
-                    <i
-                      className="fa-solid fa-list-ul"
-                      style={{ marginRight: '0.4rem', fontSize: '0.75rem' }}
-                    ></i>
+                    <span style={{ marginRight: '0.4rem' }}>📑</span>
                     {language === 'ko' ? '목차' : 'Contents'}
                   </h3>
                   <ul className="chapter-toc-list">
@@ -489,7 +443,7 @@ const ChapterDetail = (): ReactElement => {
                       textDecoration: 'none',
                     }}
                   >
-                    <i className="fa-solid fa-arrow-left"></i>
+                    <span style={{ fontSize: '1.1rem' }}>&#8592;</span>
                     <div style={{ textAlign: 'left' }}>
                       <div
                         style={{
@@ -533,7 +487,7 @@ const ChapterDetail = (): ReactElement => {
                         Ch.{nextChapter.chapter_number} {nextChapter.title}
                       </div>
                     </div>
-                    <i className="fa-solid fa-arrow-right"></i>
+                    <span style={{ fontSize: '1.1rem' }}>&#8594;</span>
                   </Link>
                 ) : (
                   <div />
@@ -550,8 +504,7 @@ const ChapterDetail = (): ReactElement => {
                     fontSize: '0.9rem',
                   }}
                 >
-                  <i className="fa-solid fa-list"></i>{' '}
-                  {language === 'ko' ? '전체 챕터 목록' : 'All Chapters'}
+                  📋 {language === 'ko' ? '전체 챕터 목록' : 'All Chapters'}
                 </Link>
               </div>
             </div>

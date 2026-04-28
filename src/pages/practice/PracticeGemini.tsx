@@ -25,7 +25,7 @@ const PracticeGemini = (): ReactElement => {
             <span>Gemini</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-diamond"></i>
+            💎
           </div>
           <h2 className="page-title">Gemini 실습 가이드</h2>
           <p className="page-subtitle">
@@ -40,7 +40,7 @@ const PracticeGemini = (): ReactElement => {
         <div className="container practice-content">
           {/* 소개 */}
           <h3>
-            <i className="fa-solid fa-circle-info" style={{ color: '#4285F4', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#4285F4', marginRight: '0.5rem' }}>ℹ️</span>
             소개
           </h3>
           <p>
@@ -50,7 +50,7 @@ const PracticeGemini = (): ReactElement => {
           </p>
 
           <div className="info-box tip">
-            <div className="info-icon"><i className="fa-solid fa-lightbulb"></i></div>
+            <div className="info-icon">💡</div>
             <div className="info-content">
               <b>접속 방법</b>
               <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#4285F4' }}>
@@ -62,7 +62,7 @@ const PracticeGemini = (): ReactElement => {
 
           {/* 멀티모달 기능 */}
           <h3>
-            <i className="fa-solid fa-layer-group" style={{ color: '#4285F4', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#4285F4', marginRight: '0.5rem' }}>📊</span>
             멀티모달 기능
           </h3>
           <p>
@@ -72,28 +72,28 @@ const PracticeGemini = (): ReactElement => {
           <div className="compare-grid">
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#EA4335' }}>
-                <i className="fa-solid fa-image"></i>
+                🖼️
               </div>
               <div className="compare-title">이미지 분석</div>
               <div className="compare-desc">사진, 차트, 다이어그램의 내용을 이해하고 설명</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#4285F4' }}>
-                <i className="fa-solid fa-globe"></i>
+                🌍
               </div>
               <div className="compare-title">실시간 검색</div>
               <div className="compare-desc">최신 정보를 인터넷에서 검색하여 답변에 반영</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#34A853' }}>
-                <i className="fa-brands fa-google"></i>
+                🔗
               </div>
               <div className="compare-title">Google 연동</div>
               <div className="compare-desc">Gmail, Docs, Drive 등 Google 서비스와 통합</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#FBBC04' }}>
-                <i className="fa-solid fa-code"></i>
+                💻
               </div>
               <div className="compare-title">코드 실행</div>
               <div className="compare-desc">Python 코드를 직접 실행하고 결과 확인</div>
@@ -102,7 +102,7 @@ const PracticeGemini = (): ReactElement => {
 
           {/* 사용법 */}
           <h3>
-            <i className="fa-solid fa-book" style={{ color: '#3B82F6', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#3B82F6', marginRight: '0.5rem' }}>📚</span>
             사용법
           </h3>
           <ol>
@@ -115,11 +115,11 @@ const PracticeGemini = (): ReactElement => {
 
           {/* 팁 */}
           <h3>
-            <i className="fa-solid fa-wand-magic-sparkles" style={{ color: '#7C3AED', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#7C3AED', marginRight: '0.5rem' }}>✨</span>
             효과적인 사용 팁
           </h3>
           <div className="info-box example">
-            <div className="info-icon"><i className="fa-solid fa-check"></i></div>
+            <div className="info-icon">✅</div>
             <div className="info-content">
               <b>멀티모달 활용 예시</b>
               차트 이미지를 첨부하고 "이 차트에서 가장 중요한 트렌드 3가지를 분석하고,
@@ -127,7 +127,7 @@ const PracticeGemini = (): ReactElement => {
             </div>
           </div>
           <div className="info-box tip">
-            <div className="info-icon"><i className="fa-solid fa-lightbulb"></i></div>
+            <div className="info-icon">💡</div>
             <div className="info-content">
               <b>Google Workspace 통합</b>
               "@Gmail 최근 받은 회의 관련 이메일을 요약해줘", "@YouTube AI 리터러시 관련
@@ -137,7 +137,7 @@ const PracticeGemini = (): ReactElement => {
 
           {/* 실습 과제 */}
           <h3>
-            <i className="fa-solid fa-clipboard-check" style={{ color: '#059669', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#059669', marginRight: '0.5rem' }}>📋</span>
             실습 과제
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -167,10 +167,10 @@ const PracticeGemini = (): ReactElement => {
           {/* Navigation */}
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color, #e5e7eb)' }}>
             <Link to="/practice/claude" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-              <i className="fa-solid fa-arrow-left"></i> Claude 실습
+              ← Claude 실습
             </Link>
             <Link to="/practice/prompt" style={{ color: '#3B82F6', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}>
-              프롬프트 엔지니어링 <i className="fa-solid fa-arrow-right"></i>
+              프롬프트 엔지니어링 →
             </Link>
           </div>
         </div>

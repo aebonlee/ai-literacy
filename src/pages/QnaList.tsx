@@ -58,7 +58,7 @@ const QnaList = (): ReactElement => {
             <span>Q&A</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-circle-question"></i>
+            ❓
           </div>
           <h2 className="page-title">Q&A</h2>
           <p className="page-subtitle">
@@ -141,10 +141,7 @@ const QnaList = (): ReactElement => {
             </div>
           ) : (
             <div className="empty-state">
-              <i
-                className="fa-solid fa-comments"
-                style={{ fontSize: '2rem', marginBottom: '1rem', opacity: 0.3 }}
-              ></i>
+              <span style={{ fontSize: '2rem', marginBottom: '1rem', opacity: 0.3 }}>💬</span>
               <p>
                 {language === 'ko'
                   ? '등록된 Q&A가 없습니다.'

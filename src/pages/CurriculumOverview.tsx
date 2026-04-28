@@ -61,7 +61,7 @@ const CurriculumOverview = (): ReactElement => {
             <span>{t('site.nav.curriculum')}</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-book-open"></i>
+            📖
           </div>
           <h2 className="page-title">
             {language === 'ko' ? '교과 개요' : 'Curriculum Overview'}
@@ -158,7 +158,7 @@ const CurriculumOverview = (): ReactElement => {
                 border: 'none',
               }}
             >
-              <i className="fa-solid fa-play"></i>{' '}
+              ▶️{' '}
               {language === 'ko' ? '학습 시작하기' : 'Start Learning'}
             </Link>
             <Link
@@ -173,7 +173,7 @@ const CurriculumOverview = (): ReactElement => {
                 color: 'var(--text-primary)',
               }}
             >
-              <i className="fa-solid fa-flask"></i>{' '}
+              🧪{' '}
               {language === 'ko' ? 'AI 실습하기' : 'AI Practice'}
             </Link>
           </div>

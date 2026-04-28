@@ -17,7 +17,7 @@ const PRACTICE_CARDS: PracticeCard[] = [
     title: 'ChatGPT',
     description: 'OpenAI의 대화형 AI 도구 활용법과 실습 가이드',
     path: '/practice/chatgpt',
-    icon: 'fa-solid fa-comments',
+    icon: '💬',
     bgColor: 'rgba(16,163,127,0.1)',
     iconColor: '#10A37F',
   },
@@ -25,7 +25,7 @@ const PRACTICE_CARDS: PracticeCard[] = [
     title: 'Claude',
     description: 'Anthropic의 안전한 AI 어시스턴트 활용법과 실습 가이드',
     path: '/practice/claude',
-    icon: 'fa-solid fa-shield-halved',
+    icon: '🛡️',
     bgColor: 'rgba(204,120,74,0.1)',
     iconColor: '#CC784A',
   },
@@ -33,7 +33,7 @@ const PRACTICE_CARDS: PracticeCard[] = [
     title: 'Gemini',
     description: 'Google의 멀티모달 AI 도구 활용법과 실습 가이드',
     path: '/practice/gemini',
-    icon: 'fa-solid fa-diamond',
+    icon: '💎',
     bgColor: 'rgba(66,133,244,0.1)',
     iconColor: '#4285F4',
   },
@@ -41,7 +41,7 @@ const PRACTICE_CARDS: PracticeCard[] = [
     title: '프롬프트 엔지니어링',
     description: '효과적인 프롬프트 작성법과 고급 기법 실습',
     path: '/practice/prompt',
-    icon: 'fa-solid fa-terminal',
+    icon: '💻',
     bgColor: 'rgba(124,58,237,0.1)',
     iconColor: '#7C3AED',
   },
@@ -67,7 +67,7 @@ const PracticeHome = (): ReactElement => {
             <span>{language === 'ko' ? 'AI 실습' : 'AI Practice'}</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-flask"></i>
+            🧪
           </div>
           <h2 className="page-title">
             {language === 'ko' ? 'AI 실습' : 'AI Practice'}
@@ -95,10 +95,7 @@ const PracticeHome = (): ReactElement => {
                   className="practice-card-icon"
                   style={{ backgroundColor: card.bgColor }}
                 >
-                  <i
-                    className={card.icon}
-                    style={{ color: card.iconColor }}
-                  ></i>
+                  <span style={{ color: card.iconColor }}>{card.icon}</span>
                 </div>
                 <h3>{card.title}</h3>
                 <p>{card.description}</p>
@@ -112,7 +109,7 @@ const PracticeHome = (): ReactElement => {
             style={{ maxWidth: '700px', margin: '2.5rem auto 0' }}
           >
             <div className="info-icon">
-              <i className="fa-solid fa-lightbulb"></i>
+              💡
             </div>
             <div className="info-content">
               <b>{language === 'ko' ? '학습 팁' : 'Learning Tip'}</b>

@@ -133,28 +133,28 @@ const Home = (): ReactElement => {
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">
-                <i className="fa-solid fa-brain"></i>
+                🧠
               </div>
               <h3>AI 이해</h3>
               <p>AI의 원리와 개념을 기초부터 체계적으로 학습</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
-                <i className="fa-solid fa-wand-magic-sparkles"></i>
+                ✨
               </div>
               <h3>실전 활용</h3>
               <p>ChatGPT, Claude, Gemini를 활용한 AI 실습</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
-                <i className="fa-solid fa-scale-balanced"></i>
+                ⚖️
               </div>
               <h3>AI 윤리</h3>
               <p>책임 있는 AI 사용을 위한 윤리와 안전 교육</p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">
-                <i className="fa-solid fa-rocket"></i>
+                🚀
               </div>
               <h3>미래 설계</h3>
               <p>AI 시대의 진로와 미래 사회 전망</p>

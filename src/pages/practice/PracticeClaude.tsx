@@ -25,7 +25,7 @@ const PracticeClaude = (): ReactElement => {
             <span>Claude</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-shield-halved"></i>
+            🛡️
           </div>
           <h2 className="page-title">Claude 실습 가이드</h2>
           <p className="page-subtitle">
@@ -40,7 +40,7 @@ const PracticeClaude = (): ReactElement => {
         <div className="container practice-content">
           {/* 소개 */}
           <h3>
-            <i className="fa-solid fa-circle-info" style={{ color: '#CC784A', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#CC784A', marginRight: '0.5rem' }}>ℹ️</span>
             소개
           </h3>
           <p>
@@ -50,7 +50,7 @@ const PracticeClaude = (): ReactElement => {
           </p>
 
           <div className="info-box tip">
-            <div className="info-icon"><i className="fa-solid fa-lightbulb"></i></div>
+            <div className="info-icon">💡</div>
             <div className="info-content">
               <b>접속 방법</b>
               <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" style={{ color: '#CC784A' }}>
@@ -62,7 +62,7 @@ const PracticeClaude = (): ReactElement => {
 
           {/* Constitutional AI 특징 */}
           <h3>
-            <i className="fa-solid fa-shield-halved" style={{ color: '#CC784A', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#CC784A', marginRight: '0.5rem' }}>🛡️</span>
             Constitutional AI 특징
           </h3>
           <p>
@@ -73,28 +73,28 @@ const PracticeClaude = (): ReactElement => {
           <div className="compare-grid">
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#059669' }}>
-                <i className="fa-solid fa-check-double"></i>
+                ✅
               </div>
               <div className="compare-title">정직함</div>
               <div className="compare-desc">모르는 것은 모른다고 솔직하게 답변</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#3B82F6' }}>
-                <i className="fa-solid fa-file-lines"></i>
+                📄
               </div>
               <div className="compare-title">긴 문서 처리</div>
               <div className="compare-desc">최대 200K 토큰의 대용량 컨텍스트 처리</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#7C3AED' }}>
-                <i className="fa-solid fa-magnifying-glass-chart"></i>
+                🔍
               </div>
               <div className="compare-title">정밀 분석</div>
               <div className="compare-desc">논문, 계약서 등 복잡한 문서 분석에 강점</div>
             </div>
             <div className="compare-card">
               <div className="compare-icon" style={{ color: '#DC2626' }}>
-                <i className="fa-solid fa-ban"></i>
+                🚫
               </div>
               <div className="compare-title">안전 거부</div>
               <div className="compare-desc">유해하거나 위험한 요청을 정중하게 거절</div>
@@ -103,7 +103,7 @@ const PracticeClaude = (): ReactElement => {
 
           {/* 사용법 */}
           <h3>
-            <i className="fa-solid fa-book" style={{ color: '#3B82F6', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#3B82F6', marginRight: '0.5rem' }}>📚</span>
             사용법
           </h3>
           <ol>
@@ -116,11 +116,11 @@ const PracticeClaude = (): ReactElement => {
 
           {/* 팁 */}
           <h3>
-            <i className="fa-solid fa-wand-magic-sparkles" style={{ color: '#7C3AED', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#7C3AED', marginRight: '0.5rem' }}>✨</span>
             효과적인 사용 팁
           </h3>
           <div className="info-box example">
-            <div className="info-icon"><i className="fa-solid fa-check"></i></div>
+            <div className="info-icon">✅</div>
             <div className="info-content">
               <b>XML 태그 활용 예시</b>
               {'<document>여기에 분석할 텍스트</document>'}<br />
@@ -128,7 +128,7 @@ const PracticeClaude = (): ReactElement => {
             </div>
           </div>
           <div className="info-box tip">
-            <div className="info-icon"><i className="fa-solid fa-lightbulb"></i></div>
+            <div className="info-icon">💡</div>
             <div className="info-content">
               <b>Claude의 강점 활용</b>
               긴 문서를 통째로 첨부하여 분석, 비교, 요약을 요청하면 Claude의 장점을 극대화할 수 있습니다.
@@ -138,7 +138,7 @@ const PracticeClaude = (): ReactElement => {
 
           {/* 실습 과제 */}
           <h3>
-            <i className="fa-solid fa-clipboard-check" style={{ color: '#059669', marginRight: '0.5rem' }}></i>
+            <span style={{ color: '#059669', marginRight: '0.5rem' }}>📋</span>
             실습 과제
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -168,10 +168,10 @@ const PracticeClaude = (): ReactElement => {
           {/* Navigation */}
           <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color, #e5e7eb)' }}>
             <Link to="/practice/chatgpt" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-              <i className="fa-solid fa-arrow-left"></i> ChatGPT 실습
+              ← ChatGPT 실습
             </Link>
             <Link to="/practice/gemini" style={{ color: '#3B82F6', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}>
-              Gemini 실습 <i className="fa-solid fa-arrow-right"></i>
+              Gemini 실습 →
             </Link>
           </div>
         </div>

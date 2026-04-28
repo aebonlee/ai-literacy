@@ -72,7 +72,7 @@ const ChapterList = (): ReactElement => {
             <span>{language === 'ko' ? '학습하기' : 'Chapters'}</span>
           </div>
           <div className="page-header-icon">
-            <i className="fa-solid fa-graduation-cap"></i>
+            🎓
           </div>
           <h2 className="page-title">
             {language === 'ko' ? '학습하기' : 'Chapters'}
