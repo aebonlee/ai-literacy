@@ -702,6 +702,48 @@ main {
 
 .section-content-body table { display: table; }
 
+/* Quiz details/summary toggle */
+.section-content-body details {
+  margin-top: 12px;
+  border: 1px solid var(--border-light, #E5E7EB);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.section-content-body details summary {
+  padding: 10px 16px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #1E3A8A;
+  background: #EFF6FF;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+.section-content-body details summary::-webkit-details-marker { display: none; }
+.section-content-body details summary::before {
+  content: '▶';
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+.section-content-body details[open] summary::before {
+  transform: rotate(90deg);
+}
+.section-content-body details summary:hover {
+  background: #DBEAFE;
+}
+.section-content-body details > p,
+.section-content-body details > div {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  background: #F8FAFC;
+  border-top: 1px solid var(--border-light, #E5E7EB);
+  color: var(--text-secondary);
+}
+
 @media (max-width: 1024px) {
   .chapter-layout { grid-template-columns: 1fr; }
   .chapter-sidebar { position: static; max-height: none; overflow-y: visible; }

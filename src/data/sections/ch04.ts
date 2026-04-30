@@ -947,7 +947,10 @@ export const CH04_SECTIONS = [
     <li>둘 사이에는 차이가 없다</li>
     <li>판별적 AI가 생성형 AI보다 항상 더 뛰어나다</li>
   </ol>
-  <p><em>정답: b) 생성형 AI는 새로운 콘텐츠(텍스트, 이미지 등)를 생성하고, 판별적 AI는 데이터를 분류하거나 예측합니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: b) 생성형 AI는 새로운 콘텐츠(텍스트, 이미지 등)를 생성하고, 판별적 AI는 데이터를 분류하거나 예측합니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 2</h4>
@@ -959,7 +962,10 @@ export const CH04_SECTIONS = [
     <li>RLHF(인간 피드백 기반 강화학습)</li>
     <li>CNN(합성곱 신경망)</li>
   </ol>
-  <p><em>정답: c) RLHF(Reinforcement Learning from Human Feedback). ChatGPT는 기본 GPT 모델에 인간 평가자의 선호도 데이터를 활용한 강화학습을 적용하여, 인간이 원하는 방식의 대화를 학습했습니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: c) RLHF(Reinforcement Learning from Human Feedback). ChatGPT는 기본 GPT 모델에 인간 평가자의 선호도 데이터를 활용한 강화학습을 적용하여, 인간이 원하는 방식의 대화를 학습했습니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 3</h4>
@@ -971,7 +977,10 @@ export const CH04_SECTIONS = [
     <li>정직한 (Honest)</li>
     <li>최고 속도 (Fastest)</li>
   </ol>
-  <p><em>정답: d) 최고 속도. Constitutional AI의 세 가지 핵심 원칙은 도움이 되고(Helpful), 무해하며(Harmless), 정직한(Honest) AI를 만드는 것입니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: d) 최고 속도. Constitutional AI의 세 가지 핵심 원칙은 도움이 되고(Helpful), 무해하며(Harmless), 정직한(Honest) AI를 만드는 것입니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 4</h4>
@@ -983,7 +992,10 @@ export const CH04_SECTIONS = [
     <li>오픈소스 모델</li>
     <li>가장 오래된 AI 모델</li>
   </ol>
-  <p><em>정답: b) 네이티브 멀티모달 처리 능력과 Google 생태계 통합. Gemini는 텍스트, 이미지, 오디오, 비디오를 통합적으로 처리하며 Google 서비스와 깊이 연동됩니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: b) 네이티브 멀티모달 처리 능력과 Google 생태계 통합. Gemini는 텍스트, 이미지, 오디오, 비디오를 통합적으로 처리하며 Google 서비스와 깊이 연동됩니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 5</h4>
@@ -995,7 +1007,10 @@ export const CH04_SECTIONS = [
     <li>노이즈를 점진적으로 제거하며 이미지를 생성한다</li>
     <li>기존 이미지를 잘라 붙여서 새 이미지를 만든다</li>
   </ol>
-  <p><em>정답: c) 확산 모델은 순수 노이즈에서 시작하여 학습된 패턴에 따라 점진적으로 노이즈를 제거하며 의미 있는 이미지를 생성합니다. DALL-E 3, Stable Diffusion, Midjourney 등이 이 기술을 활용합니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: c) 확산 모델은 순수 노이즈에서 시작하여 학습된 패턴에 따라 점진적으로 노이즈를 제거하며 의미 있는 이미지를 생성합니다. DALL-E 3, Stable Diffusion, Midjourney 등이 이 기술을 활용합니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 6</h4>
@@ -1007,13 +1022,19 @@ export const CH04_SECTIONS = [
     <li>특정 프로그래밍 언어의 이름이다</li>
     <li>코딩 없이 마우스만으로 소프트웨어를 만드는 도구이다</li>
   </ol>
-  <p><em>정답: b) 바이브 코딩은 AI에게 자연어로 원하는 기능을 설명하면 AI가 전체 프로그램을 생성하는 새로운 개발 방식으로, 코딩 경험이 없는 사람도 소프트웨어를 만들 수 있는 가능성을 열었습니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: b) 바이브 코딩은 AI에게 자연어로 원하는 기능을 설명하면 AI가 전체 프로그램을 생성하는 새로운 개발 방식으로, 코딩 경험이 없는 사람도 소프트웨어를 만들 수 있는 가능성을 열었습니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 7</h4>
 <div class="info-box">
   <p><strong>AI 도구를 선택할 때 고려해야 할 사항을 4가지 이상 서술하고, 학술 연구 목적으로 가장 적합한 AI 도구와 그 이유를 설명하시오.</strong></p>
-  <p><em>모범 답안: AI 도구 선택 시 고려사항으로는 (1) 사용 목적과 기능 적합성, (2) 비용(무료/유료 플랜), (3) 데이터 프라이버시 정책, (4) 정확도와 신뢰성 수준, (5) 한국어 지원 품질, (6) 기존 도구와의 생태계 호환성 등이 있습니다. 학술 연구 목적으로는 Claude가 적합합니다. 이유는 (1) 200K 토큰의 긴 문맥 창으로 논문 전체를 한 번에 분석할 수 있고, (2) Constitutional AI를 통한 정직한 응답으로 모르는 것은 모른다고 인정하며, (3) 논리적 분석과 추론 능력이 뛰어나 학술 텍스트의 비판적 분석에 적합하기 때문입니다. 다만, 최신 정보가 필요한 경우 Gemini의 Google 검색 통합 기능을 보완적으로 활용할 수 있습니다.</em></p>
+  <details>
+    <summary>모범 답안 확인</summary>
+    <p><strong>모범 답안: AI 도구 선택 시 고려사항으로는 (1) 사용 목적과 기능 적합성, (2) 비용(무료/유료 플랜), (3) 데이터 프라이버시 정책, (4) 정확도와 신뢰성 수준, (5) 한국어 지원 품질, (6) 기존 도구와의 생태계 호환성 등이 있습니다. 학술 연구 목적으로는 Claude가 적합합니다. 이유는 (1) 200K 토큰의 긴 문맥 창으로 논문 전체를 한 번에 분석할 수 있고, (2) Constitutional AI를 통한 정직한 응답으로 모르는 것은 모른다고 인정하며, (3) 논리적 분석과 추론 능력이 뛰어나 학술 텍스트의 비판적 분석에 적합하기 때문입니다. 다만, 최신 정보가 필요한 경우 Gemini의 Google 검색 통합 기능을 보완적으로 활용할 수 있습니다.</strong></p>
+  </details>
 </div>
     `,
     sort_order: 10

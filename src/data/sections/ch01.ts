@@ -690,7 +690,10 @@ export const CH01_SECTIONS = [
     <li>약인공지능 (ANI)</li>
     <li>양자인공지능 (QAI)</li>
   </ol>
-  <p><em>정답: c) 약인공지능(ANI) — 현재 모든 AI 시스템은 특정 작업에 특화된 약인공지능입니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: c) 약인공지능(ANI) — 현재 모든 AI 시스템은 특정 작업에 특화된 약인공지능입니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 2</h4>
@@ -702,7 +705,10 @@ export const CH01_SECTIONS = [
     <li>AI의 에너지 효율성을 평가하는 테스트이다</li>
     <li>프로그래밍 언어의 성능을 비교하는 테스트이다</li>
   </ol>
-  <p><em>정답: b) 인간 심사관이 대화를 통해 상대방이 기계인지 인간인지 판별하는 테스트이다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: b) 인간 심사관이 대화를 통해 상대방이 기계인지 인간인지 판별하는 테스트이다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 3</h4>
@@ -714,7 +720,10 @@ export const CH01_SECTIONS = [
     <li>감정 (Emotion)</li>
     <li>컴퓨팅 파워 (Computing Power)</li>
   </ol>
-  <p><em>정답: c) 감정 — AI 시스템의 4대 요소는 데이터, 알고리즘, 컴퓨팅 파워, 인터페이스입니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: c) 감정 — AI 시스템의 4대 요소는 데이터, 알고리즘, 컴퓨팅 파워, 인터페이스입니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 4</h4>
@@ -726,7 +735,10 @@ export const CH01_SECTIONS = [
     <li>언더피팅 (Underfitting)</li>
     <li>과적합 (Overlearning)</li>
   </ol>
-  <p><em>정답: b) 환각(Hallucination) — AI가 사실이 아닌 정보를 자신감 있게 생성하는 현상입니다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: b) 환각(Hallucination) — AI가 사실이 아닌 정보를 자신감 있게 생성하는 현상입니다.</strong></p>
+  </details>
 </div>
 
 <h4>문제 5</h4>
@@ -738,7 +750,10 @@ export const CH01_SECTIONS = [
     <li>AI와 인간은 상호 보완적 관계로, 협업할 때 최상의 결과를 얻을 수 있다</li>
     <li>AI는 인간에게 위협적인 존재이므로 개발을 중단해야 한다</li>
   </ol>
-  <p><em>정답: c) AI와 인간은 상호 보완적 관계로, 협업할 때 최상의 결과를 얻을 수 있다.</em></p>
+  <details>
+    <summary>정답 확인</summary>
+    <p><strong>정답: c) AI와 인간은 상호 보완적 관계로, 협업할 때 최상의 결과를 얻을 수 있다.</strong></p>
+  </details>
 </div>
     `,
     sort_order: 10
