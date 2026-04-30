@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import SEOHead from '../../components/SEOHead';
 import type { ReactElement } from 'react';
@@ -9,39 +8,17 @@ const PracticeGemini = (): ReactElement => {
   return (
     <>
       <SEOHead
-        title="Gemini 실습"
+        title="Gemini 활용"
         description="Google Gemini 활용 가이드 - 멀티모달 기능, 사용법, 실습 과제"
-        path="/practice/gemini"
+        path="/tools/gemini"
       />
 
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <div className="page-breadcrumb">
-            <Link to="/">{language === 'ko' ? '홈' : 'Home'}</Link>
-            <span className="sep">/</span>
-            <Link to="/practice">{language === 'ko' ? 'AI 실습' : 'Practice'}</Link>
-            <span className="sep">/</span>
-            <span>Gemini</span>
-          </div>
-          <div className="page-header-icon">
-            💎
-          </div>
-          <h2 className="page-title">Gemini 실습 가이드</h2>
-          <p className="page-subtitle">
-            Google의 멀티모달 AI를 활용하는 방법
-          </p>
-          <div className="page-header-line"></div>
-        </div>
-      </section>
-
-      {/* Content */}
       <section className="practice-detail">
         <div className="container practice-content">
           {/* 소개 */}
           <h3>
             <span style={{ color: '#4285F4', marginRight: '0.5rem' }}>ℹ️</span>
-            소개
+            {language === 'ko' ? '소개' : 'Introduction'}
           </h3>
           <p>
             Gemini는 Google이 개발한 멀티모달 AI 모델로, 텍스트, 이미지, 코드, 오디오를
@@ -63,7 +40,7 @@ const PracticeGemini = (): ReactElement => {
           {/* 멀티모달 기능 */}
           <h3>
             <span style={{ color: '#4285F4', marginRight: '0.5rem' }}>📊</span>
-            멀티모달 기능
+            {language === 'ko' ? '멀티모달 기능' : 'Multimodal Features'}
           </h3>
           <p>
             Gemini의 가장 큰 차별점은 다양한 형태의 입력을 동시에 처리하는 멀티모달 능력입니다.
@@ -71,30 +48,22 @@ const PracticeGemini = (): ReactElement => {
           </p>
           <div className="compare-grid">
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#EA4335' }}>
-                🖼️
-              </div>
+              <div className="compare-icon" style={{ color: '#EA4335' }}>🖼️</div>
               <div className="compare-title">이미지 분석</div>
               <div className="compare-desc">사진, 차트, 다이어그램의 내용을 이해하고 설명</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#4285F4' }}>
-                🌍
-              </div>
+              <div className="compare-icon" style={{ color: '#4285F4' }}>🌍</div>
               <div className="compare-title">실시간 검색</div>
               <div className="compare-desc">최신 정보를 인터넷에서 검색하여 답변에 반영</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#34A853' }}>
-                🔗
-              </div>
+              <div className="compare-icon" style={{ color: '#34A853' }}>🔗</div>
               <div className="compare-title">Google 연동</div>
               <div className="compare-desc">Gmail, Docs, Drive 등 Google 서비스와 통합</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#FBBC04' }}>
-                💻
-              </div>
+              <div className="compare-icon" style={{ color: '#FBBC04' }}>💻</div>
               <div className="compare-title">코드 실행</div>
               <div className="compare-desc">Python 코드를 직접 실행하고 결과 확인</div>
             </div>
@@ -103,7 +72,7 @@ const PracticeGemini = (): ReactElement => {
           {/* 사용법 */}
           <h3>
             <span style={{ color: '#3B82F6', marginRight: '0.5rem' }}>📚</span>
-            사용법
+            {language === 'ko' ? '사용법' : 'How to Use'}
           </h3>
           <ol>
             <li><strong>Google 로그인</strong>: Google 계정으로 Gemini에 접속합니다.</li>
@@ -116,7 +85,7 @@ const PracticeGemini = (): ReactElement => {
           {/* 팁 */}
           <h3>
             <span style={{ color: '#7C3AED', marginRight: '0.5rem' }}>✨</span>
-            효과적인 사용 팁
+            {language === 'ko' ? '효과적인 사용 팁' : 'Tips'}
           </h3>
           <div className="info-box example">
             <div className="info-icon">✅</div>
@@ -138,7 +107,7 @@ const PracticeGemini = (): ReactElement => {
           {/* 실습 과제 */}
           <h3>
             <span style={{ color: '#059669', marginRight: '0.5rem' }}>📋</span>
-            실습 과제
+            {language === 'ko' ? '실습 과제' : 'Practice Tasks'}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div className="section-card" style={{ borderRadius: '10px' }}>
@@ -162,16 +131,6 @@ const PracticeGemini = (): ReactElement => {
                 YouTube 동영상 요약을 활용해보세요.
               </p>
             </div>
-          </div>
-
-          {/* Navigation */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color, #e5e7eb)' }}>
-            <Link to="/practice/claude" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-              ← Claude 실습
-            </Link>
-            <Link to="/practice/prompt" style={{ color: '#3B82F6', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}>
-              프롬프트 엔지니어링 →
-            </Link>
           </div>
         </div>
       </section>

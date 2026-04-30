@@ -29,6 +29,7 @@ const NoticeList = lazy(() => import('../pages/NoticeList'));
 const QnaList = lazy(() => import('../pages/QnaList'));
 
 // AI 도구활용 페이지
+const ToolsLayout = lazy(() => import('../components/ToolsLayout'));
 const ToolsHome = lazy(() => import('../pages/practice/PracticeHome'));
 const ToolsChatGPT = lazy(() => import('../pages/practice/PracticeChatGPT'));
 const ToolsClaude = lazy(() => import('../pages/practice/PracticeClaude'));
@@ -87,10 +88,10 @@ const PublicLayout = (): ReactElement => {
             <Route path="/chapters/:chapterNumber" element={<ChapterDetail />} />
 
             {/* AI 도구활용 */}
-            <Route path="/tools" element={<ToolsHome />} />
-            <Route path="/tools/chatgpt" element={<ToolsChatGPT />} />
-            <Route path="/tools/claude" element={<ToolsClaude />} />
-            <Route path="/tools/gemini" element={<ToolsGemini />} />
+            <Route path="/tools" element={<ToolsLayout><ToolsHome /></ToolsLayout>} />
+            <Route path="/tools/chatgpt" element={<ToolsLayout><ToolsChatGPT /></ToolsLayout>} />
+            <Route path="/tools/claude" element={<ToolsLayout><ToolsClaude /></ToolsLayout>} />
+            <Route path="/tools/gemini" element={<ToolsLayout><ToolsGemini /></ToolsLayout>} />
 
             {/* 기존 /practice → /tools 리다이렉트 */}
             <Route path="/practice" element={<Navigate to="/tools" replace />} />

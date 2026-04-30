@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import SEOHead from '../../components/SEOHead';
 import type { ReactElement } from 'react';
@@ -9,39 +8,17 @@ const PracticeClaude = (): ReactElement => {
   return (
     <>
       <SEOHead
-        title="Claude 실습"
+        title="Claude 활용"
         description="Claude AI 활용 가이드 - Constitutional AI, 사용법, 실습 과제"
-        path="/practice/claude"
+        path="/tools/claude"
       />
 
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <div className="page-breadcrumb">
-            <Link to="/">{language === 'ko' ? '홈' : 'Home'}</Link>
-            <span className="sep">/</span>
-            <Link to="/practice">{language === 'ko' ? 'AI 실습' : 'Practice'}</Link>
-            <span className="sep">/</span>
-            <span>Claude</span>
-          </div>
-          <div className="page-header-icon">
-            🛡️
-          </div>
-          <h2 className="page-title">Claude 실습 가이드</h2>
-          <p className="page-subtitle">
-            Anthropic의 안전하고 유용한 AI 어시스턴트를 활용하는 방법
-          </p>
-          <div className="page-header-line"></div>
-        </div>
-      </section>
-
-      {/* Content */}
       <section className="practice-detail">
         <div className="container practice-content">
           {/* 소개 */}
           <h3>
             <span style={{ color: '#CC784A', marginRight: '0.5rem' }}>ℹ️</span>
-            소개
+            {language === 'ko' ? '소개' : 'Introduction'}
           </h3>
           <p>
             Claude는 Anthropic이 개발한 AI 어시스턴트로, 안전성과 유용성을 동시에 추구하는
@@ -63,7 +40,7 @@ const PracticeClaude = (): ReactElement => {
           {/* Constitutional AI 특징 */}
           <h3>
             <span style={{ color: '#CC784A', marginRight: '0.5rem' }}>🛡️</span>
-            Constitutional AI 특징
+            Constitutional AI {language === 'ko' ? '특징' : 'Features'}
           </h3>
           <p>
             Claude는 Constitutional AI라는 독자적인 학습 방법론을 사용합니다.
@@ -72,30 +49,22 @@ const PracticeClaude = (): ReactElement => {
           </p>
           <div className="compare-grid">
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#059669' }}>
-                ✅
-              </div>
+              <div className="compare-icon" style={{ color: '#059669' }}>✅</div>
               <div className="compare-title">정직함</div>
               <div className="compare-desc">모르는 것은 모른다고 솔직하게 답변</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#3B82F6' }}>
-                📄
-              </div>
+              <div className="compare-icon" style={{ color: '#3B82F6' }}>📄</div>
               <div className="compare-title">긴 문서 처리</div>
               <div className="compare-desc">최대 200K 토큰의 대용량 컨텍스트 처리</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#7C3AED' }}>
-                🔍
-              </div>
+              <div className="compare-icon" style={{ color: '#7C3AED' }}>🔍</div>
               <div className="compare-title">정밀 분석</div>
               <div className="compare-desc">논문, 계약서 등 복잡한 문서 분석에 강점</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#DC2626' }}>
-                🚫
-              </div>
+              <div className="compare-icon" style={{ color: '#DC2626' }}>🚫</div>
               <div className="compare-title">안전 거부</div>
               <div className="compare-desc">유해하거나 위험한 요청을 정중하게 거절</div>
             </div>
@@ -104,7 +73,7 @@ const PracticeClaude = (): ReactElement => {
           {/* 사용법 */}
           <h3>
             <span style={{ color: '#3B82F6', marginRight: '0.5rem' }}>📚</span>
-            사용법
+            {language === 'ko' ? '사용법' : 'How to Use'}
           </h3>
           <ol>
             <li><strong>계정 생성</strong>: claude.ai에서 이메일로 가입합니다.</li>
@@ -117,7 +86,7 @@ const PracticeClaude = (): ReactElement => {
           {/* 팁 */}
           <h3>
             <span style={{ color: '#7C3AED', marginRight: '0.5rem' }}>✨</span>
-            효과적인 사용 팁
+            {language === 'ko' ? '효과적인 사용 팁' : 'Tips'}
           </h3>
           <div className="info-box example">
             <div className="info-icon">✅</div>
@@ -139,7 +108,7 @@ const PracticeClaude = (): ReactElement => {
           {/* 실습 과제 */}
           <h3>
             <span style={{ color: '#059669', marginRight: '0.5rem' }}>📋</span>
-            실습 과제
+            {language === 'ko' ? '실습 과제' : 'Practice Tasks'}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div className="section-card" style={{ borderRadius: '10px' }}>
@@ -163,16 +132,6 @@ const PracticeClaude = (): ReactElement => {
                 역할, 목표, 제약조건, 출력 형식을 태그로 구분하여 작성하세요.
               </p>
             </div>
-          </div>
-
-          {/* Navigation */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color, #e5e7eb)' }}>
-            <Link to="/practice/chatgpt" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-              ← ChatGPT 실습
-            </Link>
-            <Link to="/practice/gemini" style={{ color: '#3B82F6', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}>
-              Gemini 실습 →
-            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import SEOHead from '../../components/SEOHead';
 import type { ReactElement } from 'react';
@@ -9,39 +8,17 @@ const PracticeChatGPT = (): ReactElement => {
   return (
     <>
       <SEOHead
-        title="ChatGPT 실습"
+        title="ChatGPT 활용"
         description="ChatGPT 활용 가이드 - 사용법, 주요 기능, 실습 과제"
-        path="/practice/chatgpt"
+        path="/tools/chatgpt"
       />
 
-      {/* Page Header */}
-      <section className="page-header">
-        <div className="container">
-          <div className="page-breadcrumb">
-            <Link to="/">{language === 'ko' ? '홈' : 'Home'}</Link>
-            <span className="sep">/</span>
-            <Link to="/practice">{language === 'ko' ? 'AI 실습' : 'Practice'}</Link>
-            <span className="sep">/</span>
-            <span>ChatGPT</span>
-          </div>
-          <div className="page-header-icon">
-            💬
-          </div>
-          <h2 className="page-title">ChatGPT 실습 가이드</h2>
-          <p className="page-subtitle">
-            OpenAI의 대화형 AI를 효과적으로 활용하는 방법
-          </p>
-          <div className="page-header-line"></div>
-        </div>
-      </section>
-
-      {/* Content */}
       <section className="practice-detail">
         <div className="container practice-content">
           {/* 소개 */}
           <h3>
             <span style={{ color: '#10A37F', marginRight: '0.5rem' }}>ℹ️</span>
-            소개
+            {language === 'ko' ? '소개' : 'Introduction'}
           </h3>
           <p>
             ChatGPT는 OpenAI가 개발한 대규모 언어모델(LLM) 기반 대화형 AI입니다.
@@ -63,34 +40,26 @@ const PracticeChatGPT = (): ReactElement => {
           {/* 주요 기능 */}
           <h3>
             <span style={{ color: '#F59E0B', marginRight: '0.5rem' }}>⭐</span>
-            주요 기능
+            {language === 'ko' ? '주요 기능' : 'Key Features'}
           </h3>
           <div className="compare-grid">
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#3B82F6' }}>
-                ✍️
-              </div>
+              <div className="compare-icon" style={{ color: '#3B82F6' }}>✍️</div>
               <div className="compare-title">텍스트 생성</div>
               <div className="compare-desc">보고서, 이메일, 블로그 등 다양한 텍스트 작성</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#7C3AED' }}>
-                💻
-              </div>
+              <div className="compare-icon" style={{ color: '#7C3AED' }}>💻</div>
               <div className="compare-title">코드 작성</div>
               <div className="compare-desc">Python, JavaScript 등 프로그래밍 코드 생성 및 디버깅</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#059669' }}>
-                📊
-              </div>
+              <div className="compare-icon" style={{ color: '#059669' }}>📊</div>
               <div className="compare-title">데이터 분석</div>
               <div className="compare-desc">데이터 요약, 트렌드 분석, 인사이트 도출</div>
             </div>
             <div className="compare-card">
-              <div className="compare-icon" style={{ color: '#DC2626' }}>
-                🌐
-              </div>
+              <div className="compare-icon" style={{ color: '#DC2626' }}>🌐</div>
               <div className="compare-title">번역 / 요약</div>
               <div className="compare-desc">다국어 번역과 긴 문서 요약</div>
             </div>
@@ -99,7 +68,7 @@ const PracticeChatGPT = (): ReactElement => {
           {/* 사용법 */}
           <h3>
             <span style={{ color: '#3B82F6', marginRight: '0.5rem' }}>📚</span>
-            사용법
+            {language === 'ko' ? '사용법' : 'How to Use'}
           </h3>
           <ol>
             <li><strong>계정 생성</strong>: OpenAI 웹사이트에서 이메일 또는 Google 계정으로 가입합니다.</li>
@@ -112,7 +81,7 @@ const PracticeChatGPT = (): ReactElement => {
           {/* 팁 */}
           <h3>
             <span style={{ color: '#7C3AED', marginRight: '0.5rem' }}>✨</span>
-            효과적인 사용 팁
+            {language === 'ko' ? '효과적인 사용 팁' : 'Tips'}
           </h3>
           <div className="info-box example">
             <div className="info-icon">✅</div>
@@ -133,7 +102,7 @@ const PracticeChatGPT = (): ReactElement => {
           {/* 실습 과제 */}
           <h3>
             <span style={{ color: '#059669', marginRight: '0.5rem' }}>📋</span>
-            실습 과제
+            {language === 'ko' ? '실습 과제' : 'Practice Tasks'}
           </h3>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div className="section-card" style={{ borderRadius: '10px' }}>
@@ -156,16 +125,6 @@ const PracticeChatGPT = (): ReactElement => {
                 출력 형식을 구체적으로 지정해보세요.
               </p>
             </div>
-          </div>
-
-          {/* Navigation */}
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border-color, #e5e7eb)' }}>
-            <Link to="/practice" style={{ color: 'var(--text-secondary)', textDecoration: 'none', fontSize: '0.9rem' }}>
-              ← AI 실습 목록
-            </Link>
-            <Link to="/practice/claude" style={{ color: '#3B82F6', textDecoration: 'none', fontSize: '0.9rem', fontWeight: 600 }}>
-              Claude 실습 →
-            </Link>
           </div>
         </div>
       </section>
