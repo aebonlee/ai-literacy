@@ -1,5 +1,5 @@
 import { lazy, Suspense, type ReactElement } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import AuthGuard from '../components/AuthGuard';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
@@ -28,12 +28,16 @@ const ChapterDetail = lazy(() => import('../pages/ChapterDetail'));
 const NoticeList = lazy(() => import('../pages/NoticeList'));
 const QnaList = lazy(() => import('../pages/QnaList'));
 
-// AI 실습 페이지
-const PracticeHome = lazy(() => import('../pages/practice/PracticeHome'));
-const PracticeChatGPT = lazy(() => import('../pages/practice/PracticeChatGPT'));
-const PracticeClaude = lazy(() => import('../pages/practice/PracticeClaude'));
-const PracticeGemini = lazy(() => import('../pages/practice/PracticeGemini'));
-const PracticePrompt = lazy(() => import('../pages/practice/PracticePrompt'));
+// AI 도구활용 페이지
+const ToolsHome = lazy(() => import('../pages/practice/PracticeHome'));
+const ToolsChatGPT = lazy(() => import('../pages/practice/PracticeChatGPT'));
+const ToolsClaude = lazy(() => import('../pages/practice/PracticeClaude'));
+const ToolsGemini = lazy(() => import('../pages/practice/PracticeGemini'));
+
+// 프롬프트 실습 페이지
+const PromptHub = lazy(() => import('../pages/prompt/PromptHub'));
+const PromptWorkshop = lazy(() => import('../pages/prompt/PromptWorkshop'));
+const PromptPractice = lazy(() => import('../pages/prompt/PromptPractice'));
 
 const Loading = (): ReactElement => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
@@ -82,12 +86,21 @@ const PublicLayout = (): ReactElement => {
             <Route path="/chapters/part4" element={<ChapterList />} />
             <Route path="/chapters/:chapterNumber" element={<ChapterDetail />} />
 
-            {/* AI Practice */}
-            <Route path="/practice" element={<PracticeHome />} />
-            <Route path="/practice/chatgpt" element={<PracticeChatGPT />} />
-            <Route path="/practice/claude" element={<PracticeClaude />} />
-            <Route path="/practice/gemini" element={<PracticeGemini />} />
-            <Route path="/practice/prompt" element={<PracticePrompt />} />
+            {/* AI 도구활용 */}
+            <Route path="/tools" element={<ToolsHome />} />
+            <Route path="/tools/chatgpt" element={<ToolsChatGPT />} />
+            <Route path="/tools/claude" element={<ToolsClaude />} />
+            <Route path="/tools/gemini" element={<ToolsGemini />} />
+
+            {/* 기존 /practice → /tools 리다이렉트 */}
+            <Route path="/practice" element={<Navigate to="/tools" replace />} />
+            <Route path="/practice/*" element={<Navigate to="/tools" replace />} />
+
+            {/* 프롬프트 실습 */}
+            <Route path="/prompt" element={<Navigate to="/prompt/hub" replace />} />
+            <Route path="/prompt/hub" element={<PromptHub />} />
+            <Route path="/prompt/workshop" element={<PromptWorkshop />} />
+            <Route path="/prompt/test" element={<PromptPractice />} />
 
             {/* Community */}
             {site.features.community && (

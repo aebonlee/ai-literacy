@@ -115,14 +115,23 @@ const site: SiteConfig = {
       ]
     },
     {
-      labelKey: 'site.nav.practice',
-      path: '/practice',
-      activePath: '/practice',
+      labelKey: 'site.nav.tools',
+      path: '/tools',
+      activePath: '/tools',
       dropdown: [
-        { path: '/practice/chatgpt', labelKey: 'site.nav.practiceChatGPT' },
-        { path: '/practice/claude', labelKey: 'site.nav.practiceClaude' },
-        { path: '/practice/gemini', labelKey: 'site.nav.practiceGemini' },
-        { path: '/practice/prompt', labelKey: 'site.nav.practicePrompt' },
+        { path: '/tools/chatgpt', labelKey: 'site.nav.toolsChatGPT' },
+        { path: '/tools/claude', labelKey: 'site.nav.toolsClaude' },
+        { path: '/tools/gemini', labelKey: 'site.nav.toolsGemini' },
+      ]
+    },
+    {
+      labelKey: 'site.nav.promptLab',
+      path: '/prompt',
+      activePath: '/prompt',
+      dropdown: [
+        { path: '/prompt/hub', labelKey: 'site.nav.promptHub' },
+        { path: '/prompt/workshop', labelKey: 'site.nav.promptWorkshop' },
+        { path: '/prompt/test', labelKey: 'site.nav.promptTest' },
       ]
     },
     {
@@ -141,7 +150,8 @@ const site: SiteConfig = {
     { path: '/', labelKey: 'nav.home' },
     { path: '/curriculum', labelKey: 'site.nav.curriculum' },
     { path: '/chapters', labelKey: 'site.nav.chapters' },
-    { path: '/practice', labelKey: 'site.nav.practice' },
+    { path: '/tools', labelKey: 'site.nav.tools' },
+    { path: '/prompt', labelKey: 'site.nav.promptLab' },
     { path: '/community/notice', labelKey: 'site.nav.notice' },
     { path: '/community/qna', labelKey: 'site.nav.qna' },
   ],
