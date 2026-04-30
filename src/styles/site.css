@@ -684,6 +684,21 @@ main {
   color: var(--text-secondary);
   line-height: 1.7;
 }
+.section-content-body ol,
+.section-content-body ul {
+  padding-left: 2rem;
+  margin: 0.75rem 0 1rem;
+}
+.section-content-body ol ol,
+.section-content-body ol ul,
+.section-content-body ul ol,
+.section-content-body ul ul {
+  padding-left: 1.5rem;
+  margin: 0.3rem 0;
+}
+.section-content-body li {
+  margin-bottom: 0.4rem;
+}
 
 .section-content-body table { display: table; }
 
@@ -957,8 +972,8 @@ main {
 
 .practice-content ul,
 .practice-content ol {
-  padding-left: 1.5rem;
-  margin: 0.5rem 0 1rem;
+  padding-left: 2rem;
+  margin: 0.75rem 0 1rem;
 }
 
 .practice-content li { margin-bottom: 0.4rem; }

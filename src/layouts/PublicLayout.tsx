@@ -29,7 +29,7 @@ const NoticeList = lazy(() => import('../pages/NoticeList'));
 const QnaList = lazy(() => import('../pages/QnaList'));
 
 // AI 도구활용 페이지
-const ToolsLayout = lazy(() => import('../components/ToolsLayout'));
+import ToolsLayout from '../components/ToolsLayout';
 const ToolsHome = lazy(() => import('../pages/practice/PracticeHome'));
 const ToolsChatGPT = lazy(() => import('../pages/practice/PracticeChatGPT'));
 const ToolsClaude = lazy(() => import('../pages/practice/PracticeClaude'));
