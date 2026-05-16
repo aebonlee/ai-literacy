@@ -147,7 +147,6 @@ const site: SiteConfig = {
 
   // 푸터 바로가기 링크
   footerLinks: [
-    { path: '/', labelKey: 'nav.home' },
     { path: '/curriculum', labelKey: 'site.nav.curriculum' },
     { path: '/chapters', labelKey: 'site.nav.chapters' },
     { path: '/tools', labelKey: 'site.nav.tools' },
