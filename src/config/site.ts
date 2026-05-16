@@ -69,6 +69,7 @@ const site: SiteConfig = {
 
   // 네비게이션 메뉴
   menuItems: [
+    { path: '/about', labelKey: 'nav.about' },
     {
       labelKey: 'site.nav.curriculum',
       path: '/curriculum',

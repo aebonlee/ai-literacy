@@ -39,6 +39,7 @@ const ToolsGemini = lazy(() => import('../pages/practice/PracticeGemini'));
 const PromptHub = lazy(() => import('../pages/prompt/PromptHub'));
 const PromptWorkshop = lazy(() => import('../pages/prompt/PromptWorkshop'));
 const PromptPractice = lazy(() => import('../pages/prompt/PromptPractice'));
+const About = lazy(() => import('../pages/About'));
 
 const Loading = (): ReactElement => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
@@ -112,6 +113,8 @@ const PublicLayout = (): ReactElement => {
             )}
 
             {/* 404 */}
+            <Route path="/about" element={<About />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
